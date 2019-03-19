@@ -12,10 +12,21 @@ export class PostlistitemComponent implements OnInit {
   @Input() content: string;
   @Input() created_at: Date;
   @Input() love_it: number;
-  @Input() dontlove_it: number;
   constructor() { }
 
   ngOnInit() {
+  }
+
+  loveIt() {
+    this.love_it++;
+    console.log(this.love_it);
+    return this.love_it;
+  }
+
+  dontLoveIt() {
+    this.love_it--;
+    console.log(this.love_it);
+    return this.love_it;
   }
 
 }

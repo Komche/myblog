@@ -1,5 +1,7 @@
-<li class="list-group-item">
-  <span style="float: right;"> {{created_at | date}} </span>
+<li [ngClass]="{'list-group-item': true, 'list-group-item-success': love_it>0, 'list-group-item-danger' : love_it<0 }">
+  <span style="float: right;"> {{created_at | date : 'short'}} </span>
   <h4>{{title}}</h4>
   <p>{{content}}</p>
+  <button class="btn btn-success" style="margin-right: 10px" (click)="loveIt()">Love it!</button>
+  <button class="btn btn-danger" (click)="dontLoveIt()">Don't love it!</button>
 </li>

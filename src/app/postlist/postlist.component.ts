@@ -10,15 +10,14 @@ export class PostlistComponent implements OnInit {
   posts: any;
   constructor(public app: AppComponent) {
     this.posts = app.post;
-   }
+  }
 
   ngOnInit() {
-    this.posts =  [
+    this.posts = [
       {
         title: 'Mon premier Post',
         content: 'Lorem ipsum  Ut nisl ipsum, imperdiet ut dictum id, porttitor sed magna. Mauris volutpat diam et imperdiet bibendum.',
         love_it: 0,
-        dont_love_it: 0,
         created_at: new Date()
       },
 
@@ -26,7 +25,6 @@ export class PostlistComponent implements OnInit {
         title: 'Mon deuxième Post',
         content: 'Lorem ipsum  Ut nisl ipsum, imperdiet ut dictum id, porttitor sed magna. Mauris volutpat diam et imperdiet bibendum.',
         love_it: 0,
-        dont_love_it: 0,
         created_at: new Date()
       },
 
@@ -34,7 +32,6 @@ export class PostlistComponent implements OnInit {
         title: 'Mon troisième Post',
         content: 'Lorem ipsum  Ut nisl ipsum, imperdiet ut dictum id, porttitor sed magna. Mauris volutpat diam et imperdiet bibendum.',
         love_it: 0,
-        dont_love_it: 0,
         created_at: new Date()
       }
     ];

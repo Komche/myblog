@@ -1,1 +1,2 @@
-<app-postlistitem *ngFor="let post of posts"  [title]= "post.title" [content]="post.content" [created_at]="post.created_at"></app-postlistitem>
+<app-postlistitem *ngFor="let post of posts" [title]="post.title" [content]="post.content" [created_at]="post.created_at"
+[love_it]="post.love_it"></app-postlistitem>
